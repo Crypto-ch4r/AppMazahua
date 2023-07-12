@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Concept;
 
-class numerosController extends Controller
+class coloresController extends Controller
 {
     public function index()
     {
@@ -12,8 +12,7 @@ class numerosController extends Controller
 
     public function mostrarConceptos()
     {
-        $concepts = Concept::where('category', 'numeros')->get();
-        return view('numeros', ['concepts' => $concepts]);
+        $concepts = Concept::where('category', 'colores')->get();
+        return view('colores', ['concepts' => $concepts]);
     }
 }
-
