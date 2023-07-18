@@ -4,6 +4,7 @@
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="icon" href="{{ asset('favicon.ico') }}">
     
             <title>Maza-Aprende | Nosotros</title>
     
@@ -40,7 +41,7 @@
                 @endif
       
                 <main class="contenedor">
-                    <h1>¿Qué es Maza-Aprende?</h1>
+                    <h1 class="nosotros_h1">¿Qué es Maza-Aprende?</h1>
 
             <div class="nosotros">
                 <div class="nosotros_contenido">
@@ -57,3 +58,5 @@
                 <img class="nosotros_imagen" src="{{ asset('img/icons/niños.jpg') }}" alt="imagen nosotros">
             </div>
     </main>
+
+    <section class=""

@@ -9,8 +9,11 @@
 
 .box {
 box-sizing: border-box;
-/*font-size: 62.5%;*/
 font-size: 62.5%;
+}
+
+.nav a{
+    font-size: 1rem;
 }
 
 .contenedor {
@@ -213,6 +216,13 @@ padding: 0.5rem 0;
       grid-column: 2 / 3;
    }
 
+}
+
+.nosotros_h1{
+  text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+    font-size: 4rem;
 }
 
 /* Estilos página de inicio NO MODIFICAR POR AHORA*/
