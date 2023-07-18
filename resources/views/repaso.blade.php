@@ -127,5 +127,19 @@
             <p class="footer_text">Maza-Aprende © 2023. Un proyecto desarrollado por el TESVB.</p>
             <p class="footer_text"> Todos los derechos reservados.</p>
         </div>
+
+        <!-- Notificacion -->
+        <div class="notification">
+            <span class="icon">
+                <i class=""></i>
+            </span>
+            <span class="text"></span>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+
+        <!-- Scripts -->
+        @section('scripts')
+        <script src="{{ asset('js/app.js') }}"></script>
+        @show
     </body>
 </html>
