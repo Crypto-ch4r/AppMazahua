@@ -204,6 +204,7 @@ padding: 0.5rem 0;
 
 .nosotros_imagen {
   grid-row: 1/ 2;
+  width: 100%;
 }
 
 @media (min-width: 786px) {
@@ -223,6 +224,31 @@ padding: 0.5rem 0;
     color: var(--secundario);
     font-family: var(--fuentePrincipal);
     font-size: 4rem;
+}
+
+.bloques{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.bloque {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+   .bloques{
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .bloque__imagen{
+      width: 100%;
+  }
+}
+
+.bloque_titulo{
+  margin: 0;
 }
 
 /* Estilos página de inicio NO MODIFICAR POR AHORA*/
