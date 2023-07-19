@@ -32,4 +32,6 @@ Route::get('/colores', [App\Http\Controllers\coloresController::class, 'index'])
 Route::get('/vocab', [App\Http\Controllers\vocabController::class, 'index'])->name('vocabulario general');
 Route::get('/frutas y verduras', [App\Http\Controllers\fvController::class, 'index'])->name('fv');
 Route::get('/nosotros', [App\Http\Controllers\nosotrosController::class, 'index'])->name('nosotros');
+Route::get('/aprendeMas', [App\Http\Controllers\aprendeMasController::class, 'index'])->name('aprendeMas');
+Route::get('/evaluacion', [App\Http\Controllers\evaluacionController::class, 'index'])->name('evaluacion');
 

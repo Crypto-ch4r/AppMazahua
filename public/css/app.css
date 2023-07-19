@@ -7,6 +7,9 @@
   --fuentePrincipal: 'Ysabeau Infant', sans-serif;
 }
 
+
+/* GLOBALES */
+
 .box {
 box-sizing: border-box;
 font-size: 62.5%;
@@ -25,8 +28,6 @@ margin: 0 auto;
 box-sizing: inherit;
 }
 
-/* GLOBALES */
-
 p{
 font-size: 1.5rem;
 line-height: 1.5;
@@ -42,9 +43,10 @@ h2 {
   font-size: 3.2rem;
 } 
 
+
 /* FIN DE CSS GLOBALES */
 
-/* CARDS */
+/* CARDS CSS */
 
 /* CARDS GRID */
 
@@ -82,7 +84,6 @@ transform: scale(0.9);
 }
 
 /* CARDS  CSS GROW ANIMATION ENDS*/
-
 
 .card {
 background-color: var(--blanco);
@@ -221,9 +222,9 @@ padding: 0.5rem 0;
 
 .nosotros_h1{
   text-align: center;
-    color: var(--secundario);
-    font-family: var(--fuentePrincipal);
-    font-size: 4rem;
+  color: var(--secundario);
+  font-family: var(--fuentePrincipal);
+  font-size: 4rem;
 }
 
 .bloques{
@@ -237,18 +238,36 @@ padding: 0.5rem 0;
   text-align: center;
 }
 
-@media (min-width: 768px) {
-   .bloques{
-      grid-template-columns: repeat(2, 1fr);
-   }
-
-   .bloque__imagen{
-      width: 100%;
-  }
+.bloque_imagen{
+  width: 100%;
 }
 
 .bloque_titulo{
   margin: 0;
+  font-size: 2rem;
+}
+
+/* Nosotros CSS ends*/
+
+/* Aprende más CSS*/
+.aprende{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.aprende h1{
+  text-align: center;
+  color: var(--secundario);
+  font-family: var(--fuentePrincipal);
+  font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+  .aprende{
+     grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* Estilos página de inicio NO MODIFICAR POR AHORA*/

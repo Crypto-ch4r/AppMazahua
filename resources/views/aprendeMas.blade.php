@@ -6,7 +6,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="icon" href="{{ asset('favicon.ico') }}"> 
     
-            <title>Maza-Aprende | Nosotros</title>
+            <title>Maza-Aprende | Aprende más</title>
     
             <!-- Fonts -->
             <link rel="preconnect" href="https://fonts.bunny.net">
@@ -23,7 +23,7 @@
             <link href="{{ asset('css/normalize.css') }}" rel="stylesheet">
             <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         </head>
-        
+
         <body>
             <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
                 @if (Route::has('login'))
@@ -40,54 +40,38 @@
                     </div>
                 @endif
       
-        <main class="contenedor">
+            <main class="contenedor">
                     <h1 class="nosotros_h1">¿Qué es Maza-Aprende?</h1>
-
-            <div class="nosotros">
-                <div class="nosotros_contenido">
-                    <p>Aenean vehicula id dolor luctus laoreet. Integer nec sodales augue. Nam suscipit, 
-                    neque in maximus malesuada, urna nibh suscipit nisi, ac maximus dui dolor a massa. 
-                    Morbi at ex non libero cursus dignissim. Aenean fringilla tincidunt scelerisque. 
-                    Sed consectetur risus sit amet odio consequat facilisis.</p>
-
-                    <p>Sed tristique sollicitudin orci id accumsan. Etiam bibendum ipsum eget tellus scelerisque tincidunt. 
-                    Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut, euismod 
-                    vestibulum est. Aenean in imperdiet lorem. Proin diam lorem, ornare nec efficitur id, mattis eu massa. 
-                    Quisque eu erat vel mi volutpat blandit. Aenean iaculis volutpat pharetra.</p>
-                </div> 
-                <img class="nosotros_imagen" src="{{ asset('img/icons/familia_mazahua.jpg') }}" alt="imagen nosotros">
-            </div>
-
-            <section class="contenedor">
+            <div class="aprende">
                 <div class="bloques">
-                    <div class="bloque">
-                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
-                        <h3 class="bloque_titulo">Lorem</h3>
-                        <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
-                    </div> <!-- .bloque-->
-
-                    <div class="bloque">
-                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
-                        <h3 class="bloque_titulo">Ipsum</h3>
-                        <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
-                    </div> <!-- .bloque-->
-
-                    <div class="bloque">
-                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
-                        <h3 class="bloque_titulo">Solei</h3>
-                        <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
-                    </div> <!-- .bloque-->
-
                     <div class="bloque">
                         <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
                         <h3 class="bloque_titulo">¿Lorem?</h3>
                         <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
                     </div> <!-- .bloque-->
+
+                    <div class="bloque">
+                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
+                        <h3 class="bloque_titulo">Lorem...</h3>
+                        <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
+                    </div> <!-- .bloque-->
+
+                    <div class="bloque">
+                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
+                        <h3 class="bloque_titulo">¡Lorem!</h3>
+                        <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
+                    </div> <!-- .bloque-->
+
+                    <div class="bloque">
+                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
+                        <h3 class="bloque_titulo">Lorem.</h3>
+                        <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
+                    </div> <!-- .bloque-->
                 </div> <!-- .bloques-->
-            </section>
+            </div>
         </main>
     </div>
-        
+       ñ 
         <div class="footer">
             <p class="footer_text">Maza-Aprende © 2023. Un proyecto desarrollado por el TESVB.</p>
             <p class="footer_text"> Todos los derechos reservados.</p>
