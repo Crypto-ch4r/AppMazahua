@@ -11,10 +11,9 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
-        <!-- Styles -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Ysabeau+Infant&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <link href="{{ asset('css/normalize.css') }}" rel="preload">
@@ -24,7 +23,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
     <body class="antialiased">
-        <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
+        <div>
             @if (Route::has('login'))
                 <div class="nav sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                     @auth
@@ -41,12 +40,12 @@
 
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">
-                    <img src="{{ asset('img/icons/logov1.png') }}" height="210rem" width="210rem" class="w-32 h-32 sm:w-48 sm:h-48">
+                    <img src="{{ asset('img/icons/logo_ma.png') }}" height="210rem" width="210rem" class="w-32 h-32 sm:w-48 sm:h-48">
                 </div>
 
                 <div class="mt-16">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                        <a href="{{ route('aprendeMas') }}" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
+                        <a href="{{ route('aprendeMas') }}" class="scale-100 p-6 welcome_card dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                             <div>
                                 <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
                                     <img src="{{ asset('img/icons/learnMore_icon.png') }}">
@@ -54,7 +53,7 @@
 
                                 <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">¿Quieres aprender más sobre los Mazahua?</h2>
 
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                                <p class="mt-4 dark:text-gray-400 text-sm leading-relaxed">
                                     ¡Visita está sección! Aquí encontrarás información sobre los Mazahua, su cultura, su historia y mucho más.
                                 </p>
                             </div>

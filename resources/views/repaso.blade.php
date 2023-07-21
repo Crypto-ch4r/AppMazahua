@@ -13,8 +13,8 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Ysabeau+Infant&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        
         <!-- Styles -->
         <link href="{{ asset('css/normalize.css') }}" rel="preload">
         <link href="{{ asset('css/app.css') }}" rel="preload">
@@ -23,7 +23,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
-    <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
+    <div>
     @if (Route::has('login'))
                 <div class="nav sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                     @auth
@@ -40,7 +40,7 @@
 
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">
-                    <img src="{{ asset('img/icons/logov1.png') }}" height="210rem" width="210rem" class="w-32 h-32 sm:w-48 sm:h-48">
+                    <img src="{{ asset('img/icons/logo_ma.png') }}" height="210rem" width="210rem" class="w-32 h-32 sm:w-48 sm:h-48">
                 </div>
 
                 <div class="mt-16">
