@@ -61,25 +61,25 @@
             <section class="contenedor">
                 <div class="bloques">
                     <div class="bloque">
-                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
+                        <img class="bloque_imagen" src="{{ asset('img/icons/nahida1.png') }}" alt="img bloque">
                         <h3 class="bloque_titulo">Lorem</h3>
                         <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
                     </div> <!-- .bloque-->
 
                     <div class="bloque">
-                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
+                        <img class="bloque_imagen" src="{{ asset('img/icons/nahida1.png') }}" alt="img bloque">
                         <h3 class="bloque_titulo">Ipsum</h3>
                         <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
                     </div> <!-- .bloque-->
 
                     <div class="bloque">
-                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
+                        <img class="bloque_imagen" src="{{ asset('img/icons/nahida1.png') }}" alt="img bloque">
                         <h3 class="bloque_titulo">Solei</h3>
                         <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
                     </div> <!-- .bloque-->
 
                     <div class="bloque">
-                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
+                        <img class="bloque_imagen" src="{{ asset('img/icons/nahida1.png') }}" alt="img bloque">
                         <h3 class="bloque_titulo">¿Lorem?</h3>
                         <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
                     </div> <!-- .bloque-->

@@ -3,6 +3,11 @@
   --gris: #434b4d;
   --negro: #000;
   --grisClaro:#D3D3D3;
+  --primario: #B81365;
+  --primarioOscuro:#6A0136;
+  --secundario: #7CB518;
+  --secundarioOscuro:#5C8011;
+  --apoyo:#FFAD05;
 
   --fuentePrincipal: 'Ysabeau Infant', sans-serif;
 }
@@ -16,7 +21,7 @@ font-size: 62.5%;
 }
 
 .nav a{
-    font-size: 1rem;
+    font-size: 1rem; /* 1rem = 10px*/
 }
 
 .contenedor {
@@ -42,6 +47,10 @@ font-size: 1.5rem;
 h2 {
   font-size: 3.2rem;
 } 
+
+body{
+  background-color: var(--primario);
+}
 
 
 /* FIN DE CSS GLOBALES */
@@ -122,6 +131,7 @@ padding: 0.5rem 0;
   font-size: 1rem;
   text-align: center;
   margin: 1rem;
+  color: var(--blanco);
 }
 
 /* Footer CSS Ends*/
@@ -238,8 +248,14 @@ padding: 0.5rem 0;
   text-align: center;
 }
 
-.bloque_imagen{
-  width: 100%;
+@media (min-width: 768px) {
+  .bloques{
+     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .bloque__imagen{
+     width: 100%;
+ }
 }
 
 .bloque_titulo{
@@ -252,7 +268,7 @@ padding: 0.5rem 0;
 /* Aprende más CSS*/
 .aprende{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 2rem;
   row-gap: 2rem;
 }
@@ -264,11 +280,114 @@ padding: 0.5rem 0;
   font-size: 4rem;
 }
 
-@media (min-width: 768px) {
-  .aprende{
-     grid-template-columns: repeat(4, 1fr);
+.tarjetas-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primarioOscuro);
+  border: 0.1rem solid var(--secundarioOscuro);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  
+}
+
+.tarjeta-invertida {
+  flex-direction: row-reverse;
+}
+
+.tarjeta-imagen img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  text-align: justify;
+   overflow: hidden !important;
+}
+
+.tarjeta-texto p{
+  flex-grow: 1;
+  padding: 10px;
+  color: var(--blanco);
+}
+
+@media screen and (max-width: 600px) {
+  .tarjetas-container {
+    flex-direction: column;
+  }
+
+  .tarjeta {
+    width: 100%;
   }
 }
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: var(--apoyo);
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+/* Underline From Right */
+.hvr-underline-from-right {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  background: var(--apoyo);
+  height: 4px;
+  -webkit-transition-property: left;
+  transition-property: left;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before {
+  left: 0;
+}
+
+  
 
 /* Estilos página de inicio NO MODIFICAR POR AHORA*/
 /* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */

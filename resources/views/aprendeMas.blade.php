@@ -40,38 +40,35 @@
                     </div>
                 @endif
       
-            <main class="contenedor">
-                    <h1 class="nosotros_h1">¿Qué es Maza-Aprende?</h1>
-            <div class="aprende">
-                <div class="bloques">
-                    <div class="bloque">
-                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
-                        <h3 class="bloque_titulo">¿Lorem?</h3>
-                        <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
-                    </div> <!-- .bloque-->
-
-                    <div class="bloque">
-                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
-                        <h3 class="bloque_titulo">Lorem...</h3>
-                        <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
-                    </div> <!-- .bloque-->
-
-                    <div class="bloque">
-                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
-                        <h3 class="bloque_titulo">¡Lorem!</h3>
-                        <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
-                    </div> <!-- .bloque-->
-
-                    <div class="bloque">
-                        <img class="bloque_imagen" src="{{ asset('img/icons/evaluation_icon.png') }}" alt="img bloque">
-                        <h3 class="bloque_titulo">Lorem.</h3>
-                        <p>Morbi volutpat ultricies nibh, ut accumsan elit. Aliquam neque elit, porta eu nibh ut.</p>
-                    </div> <!-- .bloque-->
-                </div> <!-- .bloques-->
+        <div class="contenedor">
+                    <h1 class="nosotros_h1">Los Mazahua...</h1>
+                <div class="tarjetas-container">
+                    <div class="tarjeta hvr-underline-from-left">
+                      <div class="tarjeta-texto">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Vero aliquam nam dolorum sapiente dolores esse impedit, 
+                            pariatur veritatis minus, dignissimos iure atque, hic maiores 
+                            iusto molestias aut? Aut, repudiandae sit.</p>
+                      </div>
+                      <div class="tarjeta-imagen">
+                        <img src="{{ asset('img/icons/nahida1.png') }}" alt="Imagen">
+                      </div>
+                    </div>
+                
+                    <div class="tarjeta tarjeta-invertida hvr-underline-from-right">
+                      <div class="tarjeta-texto">
+                      <p>Tarjeta Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Vero aliquam nam dolorum sapiente dolores esse impedit, 
+                        pariatur veritatis minus, dignissimos iure atque, hic maiores 
+                        iusto molestias aut? Aut, repudiandae sit.</p>
+                    </div>
+                    <div class="tarjeta-imagen">
+                        <img src="{{ asset('img/icons/nahida1.png') }}" alt="Imagen">
+                      </div>
+                </div>
             </div>
-        </main>
-    </div>
-       ñ 
+        </div>
+            </div>
         <div class="footer">
             <p class="footer_text">Maza-Aprende © 2023. Un proyecto desarrollado por el TESVB.</p>
             <p class="footer_text"> Todos los derechos reservados.</p>
