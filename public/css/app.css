@@ -28,6 +28,14 @@ max-width: 100rem;
 margin: 0 auto;
 }
 
+.large_card{
+  background-color: var(--primarioOscuro);
+}
+
+.large_card p{
+  color: var(--blanco);
+}
+
 *,*::before, *after{
 box-sizing: inherit;
 }
@@ -56,13 +64,7 @@ body{
 
 /* WELCOME CSS*/
 
-.welcome_card{
-  background-color: var(--primarioOscuro);
-}
 
-.welcome_card p{
-  color: var(--blanco);
-}
 
 /* Icon Forward */
 .hvr-icon-forward {
