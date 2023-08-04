@@ -1,7 +1,7 @@
 const concepts = [
-    // { mazahua_word: "Palabra 1", url_image: "imagen1.jpg" },
-    // { mazahua_word: "Palabra 2", url_image: "imagen2.jpg" },
-    // ...
+    { mazahua_word: "Palabra 1", url_image: "imagen1.jpg" },
+    { mazahua_word: "Palabra 2", url_image: "imagen2.jpg" },
+    
 ];
 
 
