@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="box" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,6 +25,7 @@
     </head>
     
     <body>
+        <!-- Navegación -->
         <div>
             @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
@@ -39,44 +40,36 @@
                     @endauth
                 </div>
             @endif
-  
+        </div>
+
+        <!-- Contenido -->
+        <div class="box">
             <main class="contenedor">
                 <div class="grid">
                     @foreach ($concepts as $concept)
                         <div class="card hvr-grow" data-sound-url="{{ $concept->url_sound }}">
-                                        <div class="flex justify-center mb-6">
-                                            <img src="{{ $concept->url_image }}" alt="Concept Image" class="w-20 h-20 object-contain">
-                                        </div>
-                                        <p class="card_maz">
-                                            <span class="font-semibold">{{ $concept->mazahua_word }}</span>
-                                        </p>
+                                <div class="flex justify-center mb-6">
+                                    <img src="{{ $concept->url_image }}" alt="Concept Image" class="w-20 h-20 object-contain">
+                                </div>
+                            <p class="card_maz">
+                                <span class="font-semibold">{{ $concept->mazahua_word }}</span>
+                            </p>
                         </div>
-                            @endforeach
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </main>
+        </div>
+
+            <!-- Footer -->
             <div class="footer">
                 <p class="footer_text">Maza-Aprende © 2023. Un proyecto desarrollado por el TESVB.</p>
                 <p class="footer_text"> Todos los derechos reservados.</p>
-            </div>
-
-            <!-- Notificacion -->
-            <div class="notification">
-                <span class="icon">
-                    <i class=""></i>
-                </span>
-                <span class="text"></span>
-                <span class="close"><i class="fa fa-close"></i></span>
             </div>
 
              <!-- Scripts -->
              @section('scripts')
              <script src="{{ asset('js/app.js') }}"></script>
              @show
-
-             
-
     </body>
 </html>
 

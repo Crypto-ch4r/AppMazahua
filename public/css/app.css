@@ -15,8 +15,17 @@
 /* GLOBALES */
 
 .box {
-box-sizing: border-box;
-font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  padding: 5%;
+}
+
+@media (min-width: 786px) {
+  .box{
+  box-sizing: border-box;
+  font-size: 50%;
+  padding: 5%;
+  }
 }
 
 .nav a{
@@ -24,9 +33,10 @@ font-size: 62.5%;
 }
 
 .contenedor {
-max-width: 100rem;
-margin: 0 auto;
-}
+  max-width: 100rem;
+  margin: 0 auto;
+  padding-top: 5%;
+  }
 
 .large_card{
   background-color: var(--primarioOscuro);
@@ -62,51 +72,20 @@ body{
 
 /* FIN DE CSS GLOBALES */
 
-/* WELCOME CSS*/
-
-
-
-/* Icon Forward */
-.hvr-icon-forward {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.1s;
-  transition-duration: 0.1s;
-}
-.hvr-icon-forward .hvr-icon {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-transition-duration: 0.1s;
-  transition-duration: 0.1s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
-  -webkit-transform: translateX(4px);
-  transform: translateX(4px);
-}
-
-/* Welcome CSS Ends */
-
 /* CARDS CSS */
 
 /* CARDS GRID */
 
 .grid{
 display: grid;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(1, 1fr);
 column-gap: 2rem;
 row-gap: 2rem;
 }
 
 @media (min-width: 786px) {
 .grid{
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 }  
 
@@ -173,76 +152,6 @@ padding: 0.5rem 0;
 }
 
 /* Footer CSS Ends*/
-
-/* Notification CSS */
-.notification {
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,.1);
-    border-radius: 5px;
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-    opacity: 0;
-    padding-right: 15px;
-    position: absolute;
-    right: 30px;
-    top: 150px;
-    transition: all .5s ease;
-    width: 270px;
-}
-
-.notification.visible {
-  opacity: .8;
-  top: 20px;
-  visibility: visible;
-}
-.notification.info {
-  background-color: #2980b9;
-}
-.notification.error {
-  background-color: #e74c3c;
-}
-.notification.warning {
-  background-color: #f39c12;
-}
-.notification > .icon {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  width: 50px;
-}
-.notification > .icon > i {
-  color: white;
-  cursor: default;
-}
-.notification > .text {
-  align-items: center;
-  color: white;
-  cursor: default;
-  display: flex;
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 15px;
-  width: calc(95% - 50px);
-  word-wrap: normal;
-}
-.notification > .close {
-  color: rgba(255, 255, 255, .8);
-  cursor: pointer;
-  position: absolute;
-  right: 8px;
-  top: 5px;
-  transition: color .3s ease;
-}
-.notification > .close:hover {
-  color: #fff;
-}
-
-.hidden {
-  display: none;
-}
-
-/* Notification CSS Ends */
 
 /* Nosotros CSS */
 
