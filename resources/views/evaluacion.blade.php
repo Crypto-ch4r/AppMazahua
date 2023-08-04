@@ -45,17 +45,8 @@
         <!-- Contenido -->
         <div class="box">
             <main class="contenedor">
-                <div class="grid">
-                    @foreach ($concepts as $concept)
-                        <div class="card hvr-grow" data-sound-url="{{ $concept->url_sound }}">
-                                <div class="flex justify-center mb-6">
-                                    <img src="{{ $concept->url_image }}" alt="Concept Image" class="w-20 h-20 object-contain">
-                                </div>
-                            <p class="card_maz">
-                                <span class="font-semibold">{{ $concept->mazahua_word }}</span>
-                            </p>
-                        </div>
-                    @endforeach
+                <div class="board">
+                    <!-- Aquí se generarán las tarjetas de conceptos -->
                 </div>
             </main>
         </div>
@@ -68,7 +59,7 @@
 
              <!-- Scripts -->
              @section('scripts')
-             <script src="{{ asset('js/app.js') }}"></script>
+             <script src="{{ asset('js/game.js') }}"></script>
              @show
     </body>
 </html>

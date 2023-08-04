@@ -1,10 +1,24 @@
-const concepts = [
-    { mazahua_word: "Palabra 1", url_image: "imagen1.jpg" },
-    { mazahua_word: "Palabra 2", url_image: "imagen2.jpg" },
-    
-];
+const concepts = [];
 
+// Hacer una solicitud para obtener los conceptos desde tu servidor
+fetch('/concepts')
+  .then(response => response.json())
+  .then(data => {
+    // Selecciona aleatoriamente 10 pares de conceptos
+    const selectedConcepts = [];
+    const availableConcepts = data;
 
+    while (selectedConcepts.length < 10) {
+      const randomIndex = Math.floor(Math.random() * availableConcepts.length);
+      const randomConcept = availableConcepts[randomIndex];
+
+      selectedConcepts.push(randomConcept, randomConcept);
+      availableConcepts.splice(randomIndex, 1);
+    }
+
+    concepts.push(...selectedConcepts);
+  })
+  .catch(error => console.error('Error al obtener conceptos:', error));
 
 const board = document.querySelector('.board');
 let flippedCards = [];
@@ -72,6 +86,7 @@ function initializeGame() {
     const cardElements = concepts.flatMap(concept => [createCard(concept), createCard(concept)]);
     shuffle(cardElements);
     cardElements.forEach(card => board.appendChild(card));
+    console.log("initializeGame called");
 }
 
 initializeGame();

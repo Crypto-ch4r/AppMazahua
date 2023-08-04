@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html class="box" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,7 +39,9 @@
                         @endauth
                     </div>
                 @endif
+            </div>
       
+    <div class="box">
         <div class="contenedor">
                     <h1 class="nosotros_h1">Los Mazahua...</h1>
                 <div class="tarjetas-container">
@@ -68,7 +70,10 @@
                 </div>
             </div>
         </div>
-            </div>
+    </div>
+        
+
+        <!-- Footer -->
         <div class="footer">
             <p class="footer_text">Maza-Aprende © 2023. Un proyecto desarrollado por el TESVB.</p>
             <p class="footer_text"> Todos los derechos reservados.</p>

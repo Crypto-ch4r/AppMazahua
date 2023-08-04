@@ -23,7 +23,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::resource('concepts', ConceptController::class);
+Route::get('/concepts', [ConceptController::class, 'getAllConcepts']);
 Route::get('/repaso', [App\Http\Controllers\repasoController::class, 'index'])->name('repaso');
 Route::get('/numeros', [App\Http\Controllers\numerosController::class, 'index'])->name('numeros');
 Route::get('/partes del cuerpo', [App\Http\Controllers\partesController::class, 'index'])->name('partes del cuerpo');
