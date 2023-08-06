@@ -86,7 +86,6 @@ function initializeGame() {
     const cardElements = concepts.flatMap(concept => [createCard(concept), createCard(concept)]);
     shuffle(cardElements);
     cardElements.forEach(card => board.appendChild(card));
-    console.log("initializeGame called");
 }
 
 initializeGame();
