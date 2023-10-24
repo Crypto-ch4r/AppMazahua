@@ -46,11 +46,6 @@ Este proyecto está abierto a contribuciones de la comunidad. Si deseas contribu
 - Juan Carlos Zendejas Martínez: Desarrollador principal del proyecto.
 - M. en ISC Ámbar González Guadarrama: Contribuyente importante y asesora del proyecto.
 
-## Contacto
-
-Si tienes preguntas, sugerencias o comentarios, no dudes en ponerte en contacto con nosotros a través de:
-<a href="mailto:carlos.zendejasmtz@gmail.com?subject=Hi%20Charlie%20,%20nice%20to%20meet%20you!"><img alt="Email" src="https://img.shields.io/static/v1?style=for-the-badge&message=Gmail&color=EA4335&logo=Gmail&logoColor=FFFFFF&label=" /></a>
-
 ---
 
 ¡Únete a nosotros en la preservación y difusión de la lengua mazahua a través de Maza-Aprende!
