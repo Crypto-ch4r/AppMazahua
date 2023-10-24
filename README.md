@@ -15,6 +15,22 @@ Maza-Aprende es un proyecto educativo que tiene como objetivo preservar y difund
 
 Puedes explorar el proyecto Maza-Aprende en [LINK DISPONIBLE PROXIMAMENTE] para obtener una vista previa de las características y recursos disponibles.
 
+## Caputras de pantalla y diseño del sitio
+
+![629shots_so](https://github.com/Crypto-ch4r/Maza-Aprende/assets/61950097/8e4965a0-1f0c-4041-9ef2-83a63ff0c09b)
+<br> 
+<br>
+![584shots_so](https://github.com/Crypto-ch4r/Maza-Aprende/assets/61950097/854ca7bc-3e2b-45ac-a3fb-c0dfaa3a5977)
+<br> 
+<br>
+![650shots_so](https://github.com/Crypto-ch4r/Maza-Aprende/assets/61950097/fceadd25-6151-4f7c-8898-252ea872dc6c)
+<br> 
+<br>
+![202shots_so](https://github.com/Crypto-ch4r/Maza-Aprende/assets/61950097/b0256f62-4183-4d1b-81e7-7047346ee5a8)
+<br> 
+<br>
+![590shots_so](https://github.com/Crypto-ch4r/Maza-Aprende/assets/61950097/948e9257-944a-4089-a5fa-aa01e02e73cc)
+
 ## Uso
 
 1. Accede a la plataforma web a través de [LINK DISPONIBLE PROXIMAMENTE].
@@ -29,7 +45,6 @@ Este proyecto está abierto a contribuciones de la comunidad. Si deseas contribu
 
 - Juan Carlos Zendejas Martínez: Desarrollador principal del proyecto.
 - M. en ISC Ámbar González Guadarrama: Contribuyente importante y asesora del proyecto.
-
 
 ## Contacto
 
